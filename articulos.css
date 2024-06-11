@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.article-container {
+    width: 90%;
+    margin: 5% auto;
+    margin-top: 2%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 25%; /* Reducir el tamaño máximo de la imagen */
+    height: auto;
+    border-radius: 5%;
+}
+
+p {
+    width: 85%; /* Reducir el ancho de los párrafos */
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+button {
+    display: block;
+    width: 180px; /* Reducir el ancho del botón */
+    height: 50px;
+    margin: 20px auto;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+/* Estilos para pantallas de 600px o más */
+@media (min-width: 600px) {
+    p, img {
+        width: 70%; /* Reducir el ancho de los párrafos y la imagen */
+        max-width: 50%;
+    }
+
+    button {
+        width: 180px; /* Mantener el ancho del botón reducido */
+    }
+
+    .article-container {
+        width: 70%;
+    }
+}
+
+
