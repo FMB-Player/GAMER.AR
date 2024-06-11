@@ -1,0 +1,150 @@
+body {
+    margin: 0%;
+}
+
+
+.header {
+    background-color: #420028;
+    position: relative;
+    display: inline-block;
+    margin: 0%;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: aliceblue;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    height: 70px;
+}
+
+.header li {
+    display: inline-block;
+    line-height: 50px; /* Ajusta este valor según la altura de tu header */
+}
+
+#cartDropdown {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.dropbtn {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dropbtn:hover {
+    background-color: #0056b3;
+}
+
+
+.principal {
+
+    display: flex;
+    margin: 0%;
+    justify-content: center;
+    padding-top: 1em;
+}
+.principal .buscador{
+    font-size: 2em;
+    border-radius: 29px;
+    padding: 1% 0%;
+    block-size: 30px;
+    background-color: #EFEFEF;
+    color: #ACACAC;
+    box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+    border: none;
+    text-align: center;
+    outline: none;
+}
+
+/* styles.css */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.grid-container > div {
+    background-color: #f1f1f1;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1em;
+    order: unset; /* Add this line to reset the order property */
+}
+
+.grid-container > div img {
+    width: 100%;
+    height: auto; /* Change to auto to make the height proportional to the width */
+    object-fit: cover; /* Ensure the image covers the entire available space */
+    border-radius: 10px;
+}
+
+.grid-container > div .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container > div button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.grid-container > div button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .grid-container {
+        display: grid; /* Change display property to grid */
+        grid-template-columns: repeat(2, 1fr); /* Set the number of columns for mobile devices */
+        margin-top: 10px;
+    }
+
+    .grid-container > div {
+        padding: 2px; /* Further reduce padding on mobile devices */
+    }
+
+    .grid-container > div img {
+        height: 75px; /* Further reduce image height on mobile devices */
+    }
+
+    .grid-container > div .content {
+        font-size: 0.6em; /* Further reduce font size on mobile devices */
+    }
+}
